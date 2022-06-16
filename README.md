@@ -99,3 +99,7 @@ To analyze the energy consumption of Gyelposhing, the data is acquired from Gyel
 
 <img src='Images/price_pred.png'>
 
+<br>
+<br>
+<br>
+## THANK YOU!
