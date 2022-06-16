@@ -55,6 +55,7 @@ To analyze the energy consumption of Gyelposhing, the data is acquired from Gyel
 
 **Promotional Video :** <https://m.youtube.com/watch?v=krdGXSkq808&feature=youtube.be>
 
+<br>
 
 ## SCREENSHOTS OF THE WEBSITE
 
