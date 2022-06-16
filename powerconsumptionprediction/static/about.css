@@ -1,0 +1,93 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: cursive;
+    font-size: 14px;
+    font-weight: 400;
+    color:#777;
+}
+.navbar {
+    padding:.6rem;
+ }
+ .navbar-nav li{
+    padding-right: 40px;
+ }
+ .nav-link {
+    font-size:1.1em !important;
+ }
+ 
+ .nav.navbar-nav.navbar-right>li>a{
+    /* margin: 25px 0; */
+    color: #0b2349;
+    text-transform: uppercase;
+    font-family:cursive;
+    font-weight: bold;
+ }
+.card.text-center {
+    width:100%;
+}
+.card-header{
+    font-size:40px;
+    font-weight: 400;
+    font-family: monospace;
+    color: #080326;
+}
+.card-text{
+    font-size:16px;
+    font-family: sans-serif;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+h1{
+    font-size:36px;
+    color:#555;
+    font-weight:bold;
+    font-family: cursive;
+}
+h4{
+    font-size: 24px;
+    color:#333;
+    font-weight: bold;
+    font-family: monospace;
+}
+.card-header{
+    color: #EDBB00;
+}
+#team img{
+    margin-top: -50px;
+}
+#team i{
+    font-size: 26px;
+    color:#555;
+}
+#team p{
+    font-weight: 500;
+}
+.mt-4{
+    color: #20124d;
+}
+#team .card{
+    border-radius: 0;
+    box-shadow: 5px 5px 15px #EDBB00;
+    transition: all 0.3s ease-in;
+    -webkit-transition:all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+#team .card:hover{
+    background:#ab8c6c;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #165853;
+}
+#team .card:hover h3, #team .card:hover i{
+    color:#20124d;
+
+}
+span{
+    color:  #EDBB00;
+}

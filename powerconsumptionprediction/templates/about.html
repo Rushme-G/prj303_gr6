@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>about</title>
+
+    <script src="https://kit.fontawesome.com/784d8567c3.js" crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link
+    rel="shortcut icon"
+    href="{% static 'images/logo4.png' %}"
+    type="image/x-icon"
+  />
+   
+    <script src="{% static 'script.js' %}" defer></script>
+
+    <style>
+        .header .navbar a:hover{
+        color:white;
+        text-decoration: none;
+        background: #ff7800;
+        border-radius: 5px;
+        padding: 8px 10px;
+    }
+
+        .header .navbar a:hover,
+        .header .navbar a.active{
+            color:white;
+            background: #ff7800;
+            border-radius: 5px;
+            padding: 8px 10px;
+        }
+    </style>
+</head>
+
+<body id= "bg" background="{% static 'images/shap-2.png' %}">
+    
+<header class="header">
+    <div class="logo">
+        <a href="#"><img src="{% static 'images/logo7.png' %}">Energy Consumption</a>
+    </div>
+    
+    <nav class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'core:dashboard'%}">Visualization</a>
+        <a class = "active" href="{% url 'about' %}">About</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div> 
+</header>
+
+<section class="about">
+    <div class="content">
+        <img src="{% static 'images/logo4.png' %}" id="aboutImg">
+        <div class="text">
+            <h1 class="title">About Us</h1>
+            <p>The website is developed for the purpose to allow the users to view the Gyalpozhing household power consumption analysis and make individual household energy consumption prediction. The viwers can view the patterns and trends of energy consumption in Gyalpozhing for the past three years(2019-2021)</p>
+        </div>
+    </div>
+</section>
+
+<div class="cover">
+    <div class="col">
+        <h1 class="title">Our Team</h1>
+        <p><span>Team.</span> Coming together is a beginning. Keeping together is progress.Working together is success</p>
+    </div>
+</div>
+
+<div class="team">
+    <div class="team-row">
+        <div class="member">
+            <img src="{% static 'aboutimage/p3.jpeg' %}" alt="">
+            <h2>Anisha Rai</h2>
+            <p>BscIT Third Year</p>
+            <p><i class="fa-solid fa-envelope"></i>&nbsp;12190041.gcit@rub.edu.bt</p><br>
+            <a href="https://github.com/Aisha-rae">
+              <i class="fa-brands fa-github" style="color:#4183C4;"></i>
+            </a>&nbsp;&nbsp;&nbsp;
+            <a href="https://gitlab.com/b4671/analysis-of-electric-consumption-of-gyalposhing-household">
+              <i class="fa-brands fa-gitlab" style="color:#fca326;"></i>
+            </a>
+        </div>
+        <div class="member">
+            <img src="{% static 'aboutimage/p2.jpeg' %}" alt="">
+            <h2>Rashmi Gurung</h2>
+            <p>BscIT Third Year</p>
+            <p><i class="fa-solid fa-envelope"></i>&nbsp;12190072.gcit@rub.edu.bt</p><br>
+  
+            <a href="https://github.com/Rushme-G">
+              <i class="fa-brands fa-github" style="color:#4183C4;"></i>
+            </a>&nbsp;&nbsp;&nbsp;
+            <a href="https://gitlab.com/rushmeuzumaki">
+              <i class="fa-brands fa-gitlab" style="color:#fca326;"></i>
+            </a>
+        </div>
+        <div class="member">
+            <img src="{% static 'aboutimage/p1.jpeg' %}" alt="">
+            <h2>Sonam Dema</Del></h2>
+            <p>BscIT Third Year</p>
+            <p><i class="fa-solid fa-envelope"></i>&nbsp;12190081.gcit@rub.edu.bt</p><br>
+    
+            <a href="https://github.com/Sonamdema123">
+              <i class="fa-brands fa-github" style="color:#4183C4;"></i>
+            </a>&nbsp;&nbsp;&nbsp;
+            <a href="https://gitlab.com/12190081/its307/-/tree/main/Analysis%20of%20Household%20Power%20Consumption">
+              <i class="fa-brands fa-gitlab" style="color:#fca326;"></i>
+            </a>
+        </div>
+        <div class="member">
+          <img src="{% static 'aboutimage/p4.jpeg' %}" alt="">
+          <h2>Tashi Namgay</h2>
+          <p>BscIT Third Year</p>
+          <p><i class="fa-solid fa-envelope"></i>&nbsp;12190086.gcit@rub.edu.bt</p><br>
+          <a href="https://github.com/Tashi-N">
+            <i class="fa-brands fa-github" style="color:#4183C4;"></i>
+          </a>&nbsp;&nbsp;&nbsp;
+          <a href="https://gitlab.com/Namgay">
+            <i class="fa-brands fa-gitlab" style="color:#fca326;"></i>
+          </a>
+      </div>
+    </div>
+</div>
+ <!-----------------------team members------------------------------->
+<!--footer-->
+<section class="footer">
+    <div class="credit"> Created by <span> Third Year (Group 6) </span> | Gyalpozhing College of Information Technology <span>2022</span></div>
+</section>
+
+</body>
+</html>

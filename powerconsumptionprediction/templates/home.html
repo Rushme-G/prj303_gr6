@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="shortcut icon"
+      href="{% static 'images/logo4.png' %}"
+      type="image/x-icon"
+    />
+    <title>PowerConsumption</title>
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" /> -->
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- slider  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet"> 
+<!--awesome-->
+    <script src="https://kit.fontawesome.com/784d8567c3.js" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <script src="{% static 'script.js' %}" defer></script>
+
+</head>
+<body>
+<!-- header section starts  -->
+
+<header class="header">
+    <div class="logo">
+        <a href="#"><img src="{% static 'images/logo7.png' %}">Energy Consumption</a>
+    </div>
+    
+    <nav class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="{% url 'about' %}">About</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div> 
+</header>
+
+<div class="slider">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+    
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="{% static 'images/p.jpg' %}" class="d-block w-100" alt="..." style="width:100%;">
+                <div class="carousel-caption">
+                  <h2 class="animated bounceInRight" style="animation-delay: 1s"><span>WELCOME</span></h2>
+                  <h3 class="animated bounceInLeft" style="animation-delay: 2s">Analysis of Household Power Consumption at Gyalpozhing</h3>
+                  <p class="animated zoomIn" style="animation-delay: 2s"><a href="#features">Our Features</a></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{% static 'images/s.jpeg' %}" class="d-block w-100" alt="..." style="width:100%;">
+                <div class="carousel-caption">
+                  <h2 class="animated bounceInRight" style="animation-delay: 1s"><span>WELCOME</span></h2>
+                  <h3 class="animated bounceInLeft" style="animation-delay: 2s">Analysis of Household Power Consumption at Gyalpozhing</h3>
+                  <p class="animated zoomIn" style="animation-delay: 2s"><a href="#features">Our Features</a></p>
+                </div>
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<!--image sider end-->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+    <h1 class="heading">
+        <span>O</span>
+        <span>U</span>
+        <span>R</span>
+        <span class="space"></span>
+        <span>F</span>
+        <span>E</span>
+        <span>A</span>
+        <span>T</span>
+        <span>U</span>
+        <span>R</span>
+        <span>E</span>
+        <span>S</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="{% static 'images/analysis1.png' %}" alt="">
+            <h3>Visualization</h3>
+            <p>Graphical Representation of Power Consumption at Gyalpozhing (2019-2021)</p>
+            <a href="{% url 'core:dashboard' %}" class="btn">View Visualization</a>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/energy.png' %}" alt="">
+            <h3>Consumption</h3>
+            <p> Power Consumption for Individual Household at Gyalpozhing</p>
+            <a href="{% url 'predict' %}" class="btn">Make a Prediction</a>
+        </div>
+
+        <div class="box">
+            <img src="{% static 'images/home2.png' %}" >
+            <h3>Price</h3>
+            <p>Energy Charges for Individual Household at Gyalpozhing</p>
+            <a href="{% url 'pricepredict' %}" class="btn">Make a Prediction</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Our Location</h3>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3547.369191256588!2d91.1909611145799!3d27.238948182988228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375eaa156ca2a677%3A0x281e6e8f6a9cf6ea!2sGyalpozhing%20College%20of%20Information%20Technology!5e0!3m2!1sen!2sbt!4v1653552806898!5m2!1sen!2sbt" 
+                width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="about">
+                <i class="fa-solid fa-phone-volume fa-10x" style="color:#fca326;"></i>
+              </a>
+        </div>
+
+        <div class="box">
+            <h3>Other Links</h3>
+            <a href="https://www.gcit.edu.bt/" class="links"><i class="fas fa-arrow-right"></i>GCIT</a>
+            <a href="https://www.bpc.bt/" class="links"><i class="fas fa-arrow-right"></i>Bhutan Power Corporation</a>
+            <a href="http://www.drukgreen.bt/" class="links"><i class="fas fa-arrow-right"></i>Druk Green Power Corporation Ltd</a>
+        </div>
+
+    </div>
+    <div class="credit"> Created by <span> 3rd Year </span> | Gyalpozhing College of Information Technology <span>2022</span></div>
+</section>
+
+<!-- footer section ends -->
+
+<!--silder-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
