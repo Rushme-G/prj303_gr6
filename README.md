@@ -72,8 +72,6 @@ To analyze the energy consumption of Gyelposhing, the data is acquired from Gyel
 ### 2. About Page
 
 &emsp;
-***
-&emsp;
 
 <img src='Images/about1.png'>
 
@@ -89,8 +87,6 @@ To analyze the energy consumption of Gyelposhing, the data is acquired from Gyel
 
 ### 3. Energy Consumption Prediction Page
 
-&emsp;
-***
 &emsp;
 
 <img src='Images/con_pred1.png'>
