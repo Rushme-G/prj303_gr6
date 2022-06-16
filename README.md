@@ -35,14 +35,21 @@ To analyze the energy consumption of Gyelposhing, the data is acquired from Gyel
 
 **The unit used for voltage is Volt, current is Ampere, consumption is KiloWatt and energy charges are Ngultrum.** 
 
+<br>
+
 ## Website Link
 
 **Please Visit Our Website:** <https://energy-consumption-gcit.herokuapp.com/>
+
+<br>
+
 ## POSTER
 
 &emsp;
 <img src='Images/poster.png' height='650' width='500'>
 &emsp;
+
+<br>
 
 ## PROMOTIONAL VIDEO
 
@@ -102,4 +109,5 @@ To analyze the energy consumption of Gyelposhing, the data is acquired from Gyel
 <br>
 <br>
 <br>
-##THANK YOU!
+
+## THANK YOU!
